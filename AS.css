@@ -126,6 +126,13 @@
   form input[type="submit"]:hover {
     background-color: #666;
   }
+
+  footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+  }
   
 /* Profile Picture Styles */
 .profile-pic {
@@ -153,11 +160,4 @@
 
 #send-button:hover {
   background-color: #004C99;
-}
-
-footer {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding: 20px;
 }
