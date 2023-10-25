@@ -161,3 +161,20 @@
 #send-button:hover {
   background-color: #004C99;
 }
+
+.carousel {
+    width: 80%;
+    margin: 0 auto;
+    overflow: hidden;
+}
+.carousel-container {
+    display: flex;
+    transition: transform 0.3s ease-in-out;
+}
+.carousel-item {
+    flex: 0 0 100%;
+}
+img {
+    max-width: 100%;
+    height: auto;
+}
