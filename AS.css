@@ -146,7 +146,7 @@
   object-position: center top;
 }
 
-#send-button {
+#send-button, #prevBtn, #nextBtn {
   background-color: #333;
   color: white;
   border: none;
@@ -158,7 +158,7 @@
   transition: all 0.2s ease-in-out;
 }
 
-#send-button:hover {
+#send-button:hover, ##prevBtn:hover, #nextBtn:hover {
   background-color: #004C99;
 }
 /* Gallery Styles */
