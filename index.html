@@ -154,14 +154,11 @@
         }
 
         function goToNext() {
-    		currentIndex = (currentIndex + 1) % items.length;
-    		if (currentIndex === 0) {
-        	// If currentIndex is 0, we have reached the end, so immediately go to the beginning.
-        	showSlide(0);
-    		} else {
-        		showSlide(currentIndex);
-    		}
-}
+    		const nextIndex = (currentIndex + 1) % items.length;
+    		showSlide(nextIndex);
+    		currentIndex = nextIndex;
+	}
+
 
         prevBtn.addEventListener('click', goToPrev);
         nextBtn.addEventListener('click', goToNext);
