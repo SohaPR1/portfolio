@@ -173,7 +173,7 @@
 }
 .carousel-item {
     flex: 0 0 100%;
-    max-width: 100%;
+    max-width: 25%;
     max-height: 25%;
     object-fit: cover;
 }
