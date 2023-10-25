@@ -173,8 +173,8 @@
 }
 .carousel-item {
     flex: 0 0 100%;
-    max-width: 200px; /* Set the maximum width */
-    max-height: 150px; /* Set the maximum height */
+    max-width: 800px; /* Set the maximum width */
+    max-height: 650px; /* Set the maximum height */
     width: auto; /* This ensures the aspect ratio is maintained */
     height: auto; /* This ensures the aspect ratio is maintained */
 }
