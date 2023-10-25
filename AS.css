@@ -172,6 +172,7 @@
     transition: transform 0.3s ease-in-out;
 }
 .carousel-item {
+    flex: 0 0 100%;
     border: 1px solid #ddd;
     border-radius: 4px;
     padding: 5px;
