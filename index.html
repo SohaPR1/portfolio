@@ -155,6 +155,7 @@
             showSlide(currentIndex);
 	    prevBtn.disabled = currentIndex === 0; // Disable "Previous" at the beginning
     	    nextBtn.disabled = false; // Enable "Next"
+	    prevBtn.style.display = currentIndex === 0 ? 'none' : 'block'; // Hide "Previous" when disabled
         }
 
         function goToNext() {
@@ -163,6 +164,7 @@
     		currentIndex = nextIndex;
 		nextBtn.disabled = currentIndex === items.length - 1; // Disable "Next" at the end
     		prevBtn.disabled = false; // Enable "Previous"
+		nextBtn.style.display = currentIndex === items.length - 1 ? 'none' : 'block'; // Hide "Next" when disabled
 	}
 
 
