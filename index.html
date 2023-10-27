@@ -151,9 +151,9 @@
         }
 
         function goToPrev() {
-            currentIndex = (currentIndex - 1);
             showSlide(currentIndex);
 	    prevBtn.disabled = currentIndex === 0; // Disable "Previous" at the beginning
+	    currentIndex = (currentIndex - 1);
     	    nextBtn.disabled = false; // Enable "Next"
         }
 
