@@ -151,12 +151,12 @@
         }
 
         function goToPrev() {
-            currentIndex = (currentIndex - 0.5 + items.length) % items.length;
+            currentIndex = (currentIndex - 1.5 + items.length) % items.length;
             showSlide(currentIndex);
         }
 
         function goToNext() {
-    		const nextIndex = (currentIndex + 0.5) % items.length;
+    		const nextIndex = (currentIndex + 1.5) % items.length;
     		showSlide(nextIndex);
     		currentIndex = nextIndex;
 	}
