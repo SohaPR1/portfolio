@@ -153,17 +153,16 @@
         function goToPrev() {
             currentIndex = (currentIndex - 1);
             showSlide(currentIndex);
+	    prevBtn.disabled = currentIndex === 0; // Disable "Previous" at the beginning
+    	    nextBtn.disabled = false; // Enable "Next"
         }
 
         function goToNext() {
     		const nextIndex = (currentIndex + 1);
     		showSlide(nextIndex);
     		currentIndex = nextIndex;
-	}
-
-	function updateButtonStates() {
-    		prevBtn.disabled = currentIndex === 0;
-    		nextBtn.disabled = currentIndex === items.length - 1;
+		nextBtn.disabled = currentIndex === items.length - 1; // Disable "Next" at the end
+    		prevBtn.disabled = false; // Enable "Previous"
 	}
 
 
