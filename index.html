@@ -161,6 +161,11 @@
     		currentIndex = nextIndex;
 	}
 
+	function updateButtonStates() {
+    		prevBtn.disabled = currentIndex === 0;
+    		nextBtn.disabled = currentIndex === items.length - 1;
+	}
+
 
         prevBtn.addEventListener('click', goToPrev);
         nextBtn.addEventListener('click', goToNext);
