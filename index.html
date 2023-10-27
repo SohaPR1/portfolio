@@ -151,7 +151,8 @@
         }
 
         function goToPrev() {
-            showSlide(currentIndex);
+	    if (currentIndex != 0)
+            	showSlide(currentIndex - 1);
 	    prevBtn.disabled = currentIndex === 0; // Disable "Previous" at the beginning
 	    if (currentIndex != 0)
 	    	currentIndex = (currentIndex - 1);
