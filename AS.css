@@ -222,7 +222,7 @@
 
 @media screen and (max-width: 768px) {
     .tooltip .tooltiptext {
-      width: 100%;
+      width: 200%;
       top: 50%; /* Center the tooltip vertically on mobile */
       left: 50%; /* Center the tooltip horizontally on mobile */
       transform: translate(-50%, -50%);
