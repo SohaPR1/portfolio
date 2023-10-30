@@ -223,9 +223,10 @@
 @media screen and (max-width: 768px) {
     .tooltip .tooltiptext {
       width: 100%;
-      bottom: 100%; /* Adjust as needed */
-      left: 0;
+      top: 50%; /* Center the tooltip vertically on mobile */
+      left: 50%; /* Center the tooltip horizontally on mobile */
+      transform: translate(-50%, -50%);
+      bottom: auto; /* Remove the "bottom" property */
       margin-left: 0;
-      transform: none; /* Remove centering transform */
     }
   }
