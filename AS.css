@@ -214,3 +214,17 @@
     visibility: visible;
     opacity: 1;
   }
+
+@media screen and (max-width: 768px) {
+    .tooltip {
+      display: block;
+      text-align: center;
+    }
+
+    .tooltip .tooltiptext {
+      width: 100%;
+      bottom: 100%; /* Adjust as needed */
+      left: 0;
+      margin-left: 0;
+    }
+  }
