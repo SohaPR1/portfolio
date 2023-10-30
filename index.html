@@ -57,6 +57,8 @@
 		<section id="about">
 			<h3>About Me</h3>
 			<p>Hi, my name is Amer Stovrag and I am an <a href="ISTQB.pdf" target="_blank"><u>ISTQB Certified</u></a> Senior QA Analyst from Mostar, Bosnia and Herzegovina. I have over 5 years of experience in software testing and I am passionate about ensuring the quality and reliability of software applications.</p>
+			<br>
+			<p>My hobby is photography; it's my way of capturing the beauty I see in the world, and I'm always learning and experimenting to improve. Please check <a href="#gallery">Photo Gallery</a> below</p>
 		</section>
 
 		<section id="experience">
@@ -164,6 +166,8 @@
     		showSlide(nextIndex);
     		currentIndex = nextIndex;
 		nextBtn.disabled = currentIndex === Math.ceil(items.length / 4); // Disable "Next" at the end
+		if (window.innerWidth < 600)
+			nextBtn.disabled = currentIndex === Math.ceil(items.length / 2); // Disable "Next" at the end
     		prevBtn.disabled = false; // Enable "Previous"
 	}
 
