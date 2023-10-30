@@ -199,9 +199,9 @@
     padding: 5px;
     position: absolute;
     z-index: 1;
-    bottom: 125%;
+    bottom: 50%;
     left: 50%;
-    margin-left: -100px;
+    transform: translate(-50%, -50%); /* Center the tooltip */
     opacity: 0;
     transition: opacity 0.2s;
   }
@@ -210,21 +210,22 @@
     font-size: 18px; /* Adjust the icon size as needed */
   }
 
+  .tooltip .icon {
+    display: inline-block; /* Icon is displayed inline */
+    vertical-align: middle; /* Vertically align the icon in the center */
+  }
+
   .tooltip:hover .tooltiptext {
     visibility: visible;
     opacity: 1;
   }
 
 @media screen and (max-width: 768px) {
-    .tooltip {
-      display: block;
-      text-align: center;
-    }
-
     .tooltip .tooltiptext {
       width: 100%;
       bottom: 100%; /* Adjust as needed */
       left: 0;
       margin-left: 0;
+      transform: none; /* Remove centering transform */
     }
   }
