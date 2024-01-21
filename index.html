@@ -47,7 +47,6 @@
 				<li><a href="#experience">Experience</a></li>
 				<li><a href="#projects">Projects</a></li>
 				<li><a href="#skills">Skills</a></li>
-				<li><a href="#gallery">Gallery</a></li>
 				<li><a href="#contact">Contact</a></li>
 				<li><a href="Amer Stovrag CV - 2023.pdf" target="_blank">Resume</a></li>
 			</ul>
@@ -58,8 +57,6 @@
 		<section id="about">
 			<h3>About Me</h3>
 			<p>Hi, my name is Amer Stovrag and I am an <a href="ISTQB.pdf" target="_blank"><u>ISTQB Certified</u></a> Senior QA Analyst from Mostar, Bosnia and Herzegovina. I have over 5 years of experience in software testing and I am passionate about ensuring the quality and reliability of software applications.</p>
-			<br>
-			<p>My hobby is photography; it's my way of capturing the beauty I see in the world, and I'm always learning and experimenting to improve. Please check my <a href="#gallery"><u>Photo Gallery</u></a> below.</p>
 			<br>
 			<p>If you are interested in a project management application, please check <a href="https://asqatasko.github.io/home/" target="_blank"><u>ASQA</u></a>.</p>
 		</section>
@@ -95,18 +92,6 @@
 			</ul>
 		</section>
 
-	<section id="gallery">
-    		<h3>Photo Gallery</h3>
-    		<div class="carousel">
-        	<div class="carousel-container">
-		<a target="_blank" href="jezero.jpg"><div class="carousel-item"><img src="jezero.jpg" alt="Jezero" style="width:100%"></div></a>
-		<a target="_blank" href="coffee.JPG"><div class="carousel-item"><img src="coffee.JPG" alt="Coffee" style="width:100%"></div></a>
-		</div>
-    		</div>
-    		<button id="prevBtn">Previous</button>
-    		<button id="nextBtn">Next</button>
-	</section>
-
 		<section id="contact">
 			<h3>Contact Me</h3>
 			<p>Please check my <a href="https://www.upwork.com/freelancers/~0114168ae4591dc98c" target="_blank"><u>UpWork</u></a> profile.</p>
@@ -128,42 +113,6 @@
 				<button id="send-button" type="submit">Send</button>
 			  </form>			  
 		</section>
-
-    <script>
-        const container = document.querySelector('.carousel-container');
-        const prevBtn = document.getElementById('prevBtn');
-        const nextBtn = document.getElementById('nextBtn');
-        const items = document.querySelectorAll('.carousel-item');
-
-        let currentIndex = 0;
-
-        function showSlide(index) {
-            container.style.transform = `translateX(-${index * 100}%)`;
-        }
-
-        function goToPrev() {
-	    if (currentIndex != 0)
-            	showSlide(currentIndex - 1);
-	    prevBtn.disabled = currentIndex === 0; // Disable "Previous" at the beginning
-	    if (currentIndex != 0)
-	    	currentIndex = (currentIndex - 1);
-    	    nextBtn.disabled = false; // Enable "Next"
-        }
-
-        function goToNext() {
-    		const nextIndex = (currentIndex + 1);
-    		showSlide(nextIndex);
-    		currentIndex = nextIndex;
-		nextBtn.disabled = currentIndex === Math.ceil(items.length / 4); // Disable "Next" at the end
-		if (window.innerWidth < 600)
-			nextBtn.disabled = currentIndex === Math.ceil(items.length / 2); // Disable "Next" at the end
-    		prevBtn.disabled = false; // Enable "Previous"
-	}
-
-
-        prevBtn.addEventListener('click', goToPrev);
-        nextBtn.addEventListener('click', goToNext);
-    </script>
 
 	</main>
 
