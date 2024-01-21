@@ -161,26 +161,6 @@
 #send-button:hover, #prevBtn:hover, #nextBtn:hover {
   background-color: #004C99;
 }
-/* Gallery Styles */
-.carousel {
-    width: 100%;
-    margin: 0 auto;
-    overflow: hidden;
-}
-.carousel-container {
-    display: flex;
-    transition: transform 0.3s ease-in-out;
-}
-.carousel-item {
-    flex: 0 0 100%;
-    border: 1px solid #ddd;
-    border-radius: 4px;
-    padding: 5px;
-    width: 150px;
-}
-.carousel-item:hover {
-  box-shadow: 0 0 2px 1px rgba(0, 140, 186, 0.5);
-}
 
 /* UpWork Tooltip */
 .tooltip {
